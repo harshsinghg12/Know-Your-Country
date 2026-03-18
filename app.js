@@ -37,6 +37,7 @@ app.get("/", async (req, res) => {
     }
 })
 
+
 app.post("/submit", async (req, res) => {
     try {
         const country = req.body.search.trim().replace(/^\s+|\s+$/g, "").toLowerCase();
